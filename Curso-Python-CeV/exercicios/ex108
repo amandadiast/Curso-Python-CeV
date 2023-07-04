@@ -1,0 +1,18 @@
+# Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(), diminuir(), dobro() e metade().
+# Faça também um programa que importe esse módulo e use algumas dessas funções.
+from utilidadesCeV import moeda
+
+m = float(input('Digite o preço:  R$'))
+t = float(input('Digite a taxa:   '))
+
+
+ask = int(input('O QUE VOCÊ QUER FAZER AGORA?  1 - AUMENTAR 2 - DIMINUIR  3 - DOBRAR  4 - METADE  '))
+
+if ask == 1:
+    print(moeda.moeda(moeda.aumentar(m, t)))
+if ask == 2:
+    print(moeda.moeda(moeda.diminuir(m, t)))
+if ask == 3:
+    print(moeda.moeda(moeda.dobro(m)))
+if ask == 4:
+    print(moeda.moeda(moeda.metade(m)))
